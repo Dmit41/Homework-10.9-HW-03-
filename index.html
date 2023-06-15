@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <h1>Дмитрий Миронов. Разработчик.</h1>
+    </div>
+
+    <div>
+        <div class="info">
+            <img src="./photo/my_photo.jpg" align="left">
+            <p>Уважаемый(ая) [Имя работодателя]</p>
+            <p>Я пишу Вам, чтобы выразить свой интерес к вакансии [название вакансии] в Вашей компании.</p>
+            <p>
+                Я являюсь начинающим программистом и недавно закончил(а) обучение в [название учебного заведения].
+                Я очень заинтересован(а) в работе в Вашей компании и готов(а) приложить все усилия, чтобы стать частью команды.
+                Я обладаю знаниями и навыками в области [название языка программирования],
+                которые я
+                получил(а) благодаря обучению и практике.
+                Я уверен(а), что мой опыт и знания могут быть полезны для Вашей компании в будущем. Я готов(а) пройти любые тесты и задания, которые Вы предоставите мне, чтобы продемонстрировать свои навыки и способности.
+            </p>
+            Спасибо за рассмотрение моей кандидатуры.
+            <p>Я буду рад(а) ответить на любые вопросы, которые у Вас могут возникнуть.</p>
+            <p>С уважением, [Ваше имя]</p>
+
+        </div>
+
+        <button type="button" class="collapsible">Мои навыки:</button>
+        <div class="content">
+            <h2>My Skills</h2>
+
+            <p>HTML</p>
+            <div class="container">
+              <div class="skills html">90%</div>
+            </div>
+
+            <p>CSS</p>
+            <div class="container">
+              <div class="skills css">80%</div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="container">
+              <div class="skills js">65%</div>
+            </div>
+
+            <p>Python</p>
+            <div class="container">
+              <div class="skills python">110%</div>
+            </div>
+        </div>
+
+        <hr>
+
+        <button type="button" class="collapsible">Мои проекты:</button>
+        <div class="content">
+            <p>- Краткое описание проектов, в которых участвовал программист.</p>
+            <p>- Достижения и результаты.</p>
+        </div>
+
+        <hr>
+
+        <button type="button" class="collapsible">Мои личные качества:</button>
+        <div class="content">
+            <p>- Ответственность, внимательность к деталям.</p>
+            <p>- Коммуникабельность, умение работать в команде.</p>
+            <p>- Аналитические способности, умение решать проблемы.</p>
+        </div>
+
+        <hr>
+
+        <button type="button" class="collapsible">Моя цель:</button>
+        <div class="content">
+            <p>
+                Цель: получить должность программиста в компании, которая позволит
+                мне использовать мои навыки и опыт для создания инновационных продуктов и услуг.
+            </p>
+
+        </div>
+
+    </div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

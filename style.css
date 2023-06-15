@@ -1,0 +1,66 @@
+.header {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00d0ff;
+    font-size: 25px;
+}
+
+body {
+    background-color: #a2e6f5;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #a2e6f5;
+}
+
+* {box-sizing: border-box}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 80%; background-color: #04AA6D;}
+.css {width: 70%; background-color: #2196F3;}
+.js {width: 55%; background-color: #f44336;}
+.python {width: 100%; background-color: #eaff00; color: #000}
+
+.info{
+    font-size: 20px;
+}
+
+img {
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  border: 10px solid #6584a6;
+}
